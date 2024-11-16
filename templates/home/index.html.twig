@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block body %}
+<style>
+
+</style>
+
+<div class="example-wrapper">
+
+    <div class="row">
+        <div class="col-md-9 m-auto mt-4" id="my-list">
+            <div id="my-list" style="padding: 40px;border: 2px solid black;background-color: blue;color: white"><span>TIER ITEM 1</span></div>
+            <div style="padding: 40px;border: 2px solid black;background-color: yellow;color: white"><span>TIER ITEM 2</span></div>
+            <div style="padding: 40px;border: 2px solid black;background-color: green;color: white"><span>TIER ITEM 3</span></div>
+            <div style="padding: 40px;border: 2px solid black;background-color: pink;color: white"><span>TIER ITEM 4</span></div>
+            <div style="padding: 40px;border: 2px solid black;background-color: red;color: white"><span>TiER ITEM 5</span></div>
+            <div style="padding: 40px;border: 2px solid black;background-color: purple;color: white"><span>TIER ITEM 6</span></div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#my-list').sortable();
+})
+</script>
+{% endblock %}
