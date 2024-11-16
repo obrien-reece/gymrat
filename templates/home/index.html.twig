@@ -10,70 +10,44 @@
 <div class="example-wrapper">
 
     <div class="row">
-        <div class="col-md-12">
-            <table class="table" id="">
+        <div class="col-md-8">
+            <table class="table table-bordered" id="">
                 <tbody> 
                     <tr style="">   
                         <th style="width: 10%;background-color: red;padding: 50px">S</th>
-                        <td class="text-light" id="sortable-images">
-                            <img src="{{ asset('img/1.png') }}" width="150px"> 
-                            <img src="{{ asset('img/2.jpg') }}" width="150px"> 
-                            <img src="{{ asset('img/3.jpg') }}" width="150px"> 
-                            <img src="{{ asset('img/4.jpg') }}" width="150px"> 
-                        </td>
+                        <td class="text-light" id="sortable-s-tier"></td>
                     </tr> 
                     <tr style="">   
                         <th style="width: 10%;background-color: yellow;padding: 50px">A</th>
-                        <td class="text-light"></td>
+                        <td class="text-light" id="sortable-a-tier"></td>
                     </tr> 
                     <tr style="">   
                         <th style="width: 10%;background-color: green;padding: 50px">B</th>
-                        <td class="text-light"></td>
+                        <td class="text-light" id="sortable-b-tier"></td>
                     </tr> 
                     <tr style="">   
                         <th style="width: 10%;background-color: blue;padding: 50px">C</th>
-                        <td class="text-light"></td>
+                        <td class="text-light" id="sortable-c-tier"></td>
                     </tr> 
                     <tr style="">   
                         <th style="width: 10%;background-color: purple;padding: 50px">D</th>
-                        <td class="text-light"></td>
+                        <td class="text-light" id="sortable-d-tier"></td>
                     </tr> 
                     <tr style="">   
                         <th style="width: 10%;background-color: maroon;padding: 50px">E</th>
-                        <td class="text-light"></td>
+                        <td class="text-light" id="sortable-e-tier"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
+        <div class="col-md-4" id="sortable-images">
+            <img src="{{ asset('img/1.png') }}" width="150px"> 
+            <img src="{{ asset('img/2.jpg') }}" width="150px"> 
+            <img src="{{ asset('img/3.jpg') }}" width="150px"> 
+            <img src="{{ asset('img/4.jpg') }}" width="150px"> 
+        </div>
     </div>
-
-    <div>
-        <div class="row">
-            <div class="col-md-9" id="sortable-image">
-                <img src="{{ asset('img/1.png') }}" width="150px"> 
-                <img src="{{ asset('img/2.jpg') }}" width="150px"> 
-                <img src="{{ asset('img/3.jpg') }}" width="150px"> 
-                <img src="{{ asset('img/4.jpg') }}" width="150px"> 
-            </div>  
-        </div>   
-    </div>
-
 </div>
 
-<script>
-$(document).ready(function() {
-    $('#sortable-images').sortable({
-    group: 'sortimages'
-    });
-
-    $('#sortable-image').sortable({
-    group: 'sortimages'
-    });
-
-    $('#table-sort').sortable({
-    group: 'sortimages'
-    });
-
-})
-</script>
+<script></script>
 {% endblock %}

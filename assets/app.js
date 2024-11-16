@@ -1,10 +1,33 @@
 import './bootstrap.js';
-/*
- * Welcome to your app's main JavaScript file!
- *
- * This file will be included onto the page via the importmap() Twig function,
- * which should already be in your base.html.twig.
- */
 import './styles/app.css';
 
-console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
+$(document).ready(function() {
+
+    $('#sortable-s-tier').sortable({
+        group: 'sortimages'
+    });
+
+    $('#sortable-a-tier').sortable({
+        group: 'sortimages'
+    });
+
+    $('#sortable-b-tier').sortable({
+        group: 'sortimages'
+    });
+
+    $('#sortable-c-tier').sortable({
+        group: 'sortimages'
+    });
+
+    $('#sortable-d-tier').sortable({
+        group: 'sortimages'
+    });
+
+    $('#sortable-e-tier').sortable({
+        group: 'sortimages'
+    });
+
+    $('#sortable-images').sortable({
+        group: 'sortimages'
+    });
+})
