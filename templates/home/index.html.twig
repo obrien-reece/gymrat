@@ -11,7 +11,7 @@
 
     <div class="row">
         <div class="col-md-12">
-            <table class="table">
+            <table class="table" id="table-sort">
                 <tbody> 
                     <tr style="">   
                         <th style="width: 10%;background-color: red;padding: 50px">S</th>
@@ -37,17 +37,33 @@
                         <th style="width: 10%;background-color: maroon;padding: 50px">E</th>
                         <td class="text-light">Mark</td>
                     </tr>
-
                 </tbody>
             </table>
         </div>
+    </div>
+
+    <div>
+        <div class="row">
+            <div class="col-md-9" id="sortable-images">
+                <img src="{{ asset('img/1.png') }}" width="150px"> 
+                <img src="{{ asset('img/2.jpg') }}" width="150px"> 
+                <img src="{{ asset('img/3.jpg') }}" width="150px"> 
+                <img src="{{ asset('img/4.jpg') }}" width="150px"> 
+            </div>  
+        </div>   
     </div>
 
 </div>
 
 <script>
 $(document).ready(function() {
-    $('#my-list').sortable();
+    $('#sortable-images').sortable({
+
+    });
+    $('#table-sort').sortable({
+
+    });
+
 })
 </script>
 {% endblock %}
